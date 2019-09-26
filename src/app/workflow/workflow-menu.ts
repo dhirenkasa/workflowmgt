@@ -16,8 +16,7 @@ export const WORKFLOW_MENU_ITEMS: NbMenuItem[] = [
       {
         title: 'Add',
         link: '/workflow/add',
-      },
-      
-    ],
-  },
+      }
+    ]
+  }
 ];
