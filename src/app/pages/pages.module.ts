@@ -15,10 +15,10 @@ import { MiscellaneousModule } from './miscellaneous/miscellaneous.module';
     NbMenuModule,
     DashboardModule,
     ECommerceModule,
-    MiscellaneousModule,
+    MiscellaneousModule
   ],
   declarations: [
-    PagesComponent,
+    PagesComponent    
   ],
 })
 export class PagesModule {
