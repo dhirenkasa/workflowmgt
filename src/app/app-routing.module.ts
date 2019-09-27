@@ -11,8 +11,13 @@ import {
 
 const routes: Routes = [
   {
+    path: 'workflow',
+    loadChildren: () => import('../app/workflow/workflow.module')
+      .then(m => m.WorkflowModule)
+  },
+  {
     path: 'pages',
-    loadChildren: () => import('app/pages/pages.module')
+    loadChildren: () => import('../app/pages/pages.module')
       .then(m => m.PagesModule),
   },
   {
@@ -45,8 +50,8 @@ const routes: Routes = [
       },
     ],
   },
-  { path: '', redirectTo: 'pages', pathMatch: 'full' },
-  { path: '**', redirectTo: 'pages' },
+  { path: '', redirectTo: 'workflow', pathMatch: 'full' },
+  { path: '**', redirectTo: 'workflow' },
 ];
 
 const config: ExtraOptions = {
