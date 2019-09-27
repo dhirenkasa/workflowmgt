@@ -15,6 +15,7 @@ const routes: Routes = [
     loadChildren: () => import('../app/workflow/workflow.module')
       .then(m => m.WorkflowModule)
   },
+  
   {
     path: 'pages',
     loadChildren: () => import('../app/pages/pages.module')
